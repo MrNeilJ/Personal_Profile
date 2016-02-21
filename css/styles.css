@@ -79,6 +79,8 @@ BUTTONS
 	font-weight: bolder;
 	font-size: 1.3em;
 	color: red;
+	text-align: center;
+	text-decoration: none;
 }
 
 .button:hover {
@@ -250,8 +252,9 @@ CONTACT ME
 	flex: 1;
 }
 
-ul.subtext {
+ul.subText {
 	padding-left: 0;
+	margin-left: 0;
 }
 
 .subText li {
@@ -352,6 +355,37 @@ FOOTER
 
 
 /*==========================================
+============================================
+============================================
+============================================
+============================================
+
+============================================
+
+BLOG PAGE
+
+==========================================*/
+
+.blogEntry:first-child {
+	padding-top: 75px;
+}
+
+.blogEntry {
+	padding-top: 75px;
+}
+
+.blogEntry ul  li{
+	margin-left: 50px;
+	list-style: circle;
+}
+
+.blogEntry:last-child {
+	margin-bottom: 50px;
+}
+
+
+
+/*==========================================
 
 MEDIA QUERIES
 
@@ -385,6 +419,9 @@ MEDIA QUERIES
 	nav {
 		width: 95%;
 	}
+	section:last-child {
+		margin-bottom: 20px;
+	}
 }
 
 @media(max-width: 620px) {
@@ -401,7 +438,11 @@ MEDIA QUERIES
 		width: 50px;
 		height:50px;
 	}
-	.sub-text p{
+	.subText p{
 		margin-top: 0;
+	}
+	.about-me img {
+		width: 200px;
+		border-radius: 250px;
 	}
 }

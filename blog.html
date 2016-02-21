@@ -1,0 +1,123 @@
+<html>
+
+<head>
+	<title>Blog it out</title>
+
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/MyGrid.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+
+	<!--START OF NAVBAR-->
+	<div class="navbar">
+		<nav class="flex-container -wrap">
+			<div>
+				<h2>MrNeilJ</h2>
+			</div>
+			<div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+
+		</nav>
+	</div>
+
+	<!--END OF NAVBAR-->
+	<div class="wrapper">
+		<div class="blogEntry">
+			<div class="entryTitle">
+				<h2>FlexBox Foundations to Pixel Density Learnings</h2>
+			</div>
+			<div class="entryDate">
+				<h4>February 21, 2016</h4>
+			</div>
+			<hr />
+			<div class="blogInfo subText">
+				<p>For my current practices I have updated my website to utilize one of the newer website layout tactics known as FlexBox. The overall process and learning curve was rather low. With flexbox the layout was a breeze. The navigation was simple. All it
+					needed was a container with a class that had "Display: Flex and justify-content: space-between". This allowed me to split my logo, and navigation onto opposite sides. Even more impressive to me was the simplicity of centering my Header Tag in the
+					center of image. By utilizing the "align-items: center" I was able to get a perfectly centered Header Tag. </p>
+
+				<p>Even more amazing was the "flexibility" of the "Flex: " css method. This allowed me to even (or unevenly) space out information on the same row. If needed I could specify the limitations of that element, lets say specifiying that I did not want it
+					any smaller than 300px, and once that was no longer true it would break the element onto a new line. the "Flex: " rule allows for the greatness of MediaQuery-esque designs, without having to make extra write up, and dozens of media queries to satisfy
+					each and every element.</p>
+
+				<p>With all this greatness came a rather large issue that I ran into at the very end. It works great and responds accordingly as the screen shrinks. But when dealing with literal mobile screens, I noticed that the scaling did things that I did not expect
+					it to. For example my navigation bar would shrink exponentially, as would all of my images and elements, without telling it to. This led to my navigation bar being super small and images being microscopic and I could not figure out why it would do
+					this.</p>
+
+				<p>This is where pixel density came into play. I realized that most current mobile devices had a pixel density of two or even more, rather than one, which causes my current media queries to respond oddly. These high pixel density devices such as the
+					iPhone 6 plus display at 1080 x 1920 in portrait mode. Which meant that my initial information was shrunken down. Then I remembered I was missing a vital meta tag that would save my hide. I then updated my html to contain a meta tage that contained
+					"initial-scale = 1.0, maximum-scale = 1.0". This allowed my site to be viewed at a consistent pixel denisity across devices, which allowed my pre-set media queries and everything to work as planned. Hopefully this will continue to work!</p>
+			</div>
+
+		</div>
+
+		<div class="blogEntry">
+			<div class="entryTitle">
+				<h2>First Post Foundations</h2>
+			</div>
+			<div class="entryDate">
+				<h4>February 19, 2016</h4>
+			</div>
+			<hr />
+			<div class="blogInfo subText">
+				<p>
+					Here is my initial post.  Here I will be logging information about the trials and tribulations of setting up my website utilizing some of the latested technologies that HTML5 and CSS3 can provide.
+				</p>
+
+				<p>
+					In addition, I will also be posting information about my personal opinions on the effectiveness of a few of the most popular online "Tech-Degree" options out there.
+				</p>
+				<ul>
+					Specifically:
+					<li>
+						Team Treehouse: Tech-Degree (still in beta)
+					</li>
+					<li>
+						Free Code Camp: Front-End Developer Boot Camp
+					</li>
+					<li>
+						Code School: MEAN Stack Developer
+					</li>
+					<li>
+						Udacity: Front End Developer NanoDegree
+					</li>
+					<li>
+						The Odin Project: Web Development Path
+					</li>
+				</ul>
+				<p>
+					Keep an eye out here to see what I learn from each, and i'll be updating frequently on where I get stuck, as well as how I transition from one to another to help myself progress as fast as possible!
+				</p>
+			</div>
+
+		</div>
+	</div>
+	<!--START OF FOOTER SECTION-->
+	<footer class="footer">
+		<div class="subText">
+			<p class="">MrNeilJ.com &copy; 2015</p>
+		</div>
+		<div class="">
+			<ul>
+				<li><a href="https://twitter.com/MrNeilJ" class="social twitter">Twitter</a></li>
+				<li><a href="https://www.linkedin.com/in/neil-johnson-5b745234
+" class="social linkedin">LinkedIn</a></li>
+				<li><a href="https://github.com/MrNeilJ" class="social github">Github</a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+	<!--END OF FOOTER SECTION-->
+</body>

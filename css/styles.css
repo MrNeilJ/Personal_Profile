@@ -1,6 +1,5 @@
 html {
 	background-color: #efefef;
-	
 }
 
 body {
@@ -386,7 +385,7 @@ FOOTER
 	flex-direction: column;
 	align-items: center;
 	background-color: cornsilk;
-	align-self: flex-end
+	align-self: flex-end;
 }
 
 .footer ul {
@@ -442,12 +441,12 @@ ABOUT ME PAGE
 
 .about-separate {
 	padding-top: 75px;
+	min-height: 100vh;
 }
 
 .about-separate .sub-header h2 {
 	margin-top: 0;
 }
-
 
 
 /*==========================================
@@ -462,6 +461,21 @@ PROJECTS
 
 ==========================================*/
 
+.project-jumbo {
+	background-image: url(../img/hipster_background.png);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	padding-top: 75px;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-jumbo h1 {
+	font-size: 4em;
+	color: #fff;
+}
+
 
 /*==========================================
 ============================================
@@ -475,7 +489,6 @@ CONTACT PAGE
 
 ==========================================*/
 
-
 .contact-separate {
 	padding-top: 75px;
 }
@@ -487,33 +500,57 @@ CONTACT PAGE
 .contact-form {
 	padding: 30px;
 	background-color: dodgerblue;
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
 	border-radius: 10px;
-	
 }
+
 .form-text {
 	color: #fff;
 	font-weight: bolder;
 	padding-bottom: 10px;
+	font-size: 1.5em;
 }
 
 .form-input {
 	background: #fff;
-	border: 2px solid #fff;
+	padding: 10px 10px;
 	border-radius: 3px;
-}
-
-.form-input  {
-	width: 100%;
+	border-style: none;
 }
 
 .form-message {
 	padding-top: 30px;
 }
+
 .form-message textarea {
 	width: 100%;
 }
+
+form {
+	flex: 1;
+}
+
+textarea {
+	height: 200px;
+}
+
+.form-item {
+	padding: 20px 0;
+}
+
+.submit-button {
+	width: 150px;
+	margin-top: 20px;
+	height: 50px;
+	background: none;
+	border: 4px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
 
 /*==========================================
 
@@ -552,6 +589,10 @@ MEDIA QUERIES
 	section:last-child {
 		margin-bottom: 20px;
 	}
+	.project-jumbo h1 {
+	font-size: 3em;
+		
+}
 }
 
 @media (min-width: 621px) {
@@ -611,5 +652,12 @@ MEDIA QUERIES
 	.about-me img {
 		width: 200px;
 		border-radius: 250px;
+	}
+	.contact-us .item:nth-child(1) {
+		padding-right: 0px;
+	}
+	.project-jumbo h1 {
+		font-size: 1.5em;
+		
 	}
 }
